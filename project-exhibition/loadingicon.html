@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Icon</title>
+    <style>
+
+        .container {
+            margin: auto;
+            margin-top: 100px;
+            background-color: #dde5e7;
+            width: 150px;
+            height: 150px;
+            border-radius: 1rem;
+            position: relative;
+        }
+
+        .loader {
+            margin-top: 40px;
+            background-color: #3498db;
+            width: 20px;
+            height: 20px;
+            animation-name: move;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            animation-duration: 0.5s;
+            position: absolute;
+            top: 25px;
+            left: 30px;
+        }
+
+        .alternate {
+            animation-direction: alternate;
+        }
+
+
+        @keyframes move {
+
+            100% {
+                transform: translateX(60px) scale(1.5);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="loader alternate"></div>
+    </div>
+
+</body>
+
+</html>
