@@ -1,0 +1,74 @@
+body {
+    background-image: linear-gradient(to right, grey, lightgrey, grey);
+    font-family: Lato;
+}
+
+.container {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    max-width: 1200px;
+  }
+  .maincard {
+    width: 700px;
+    height: 500px;
+    box-sizing: border-box;
+    background-color: grey;
+  /*   width: 180px; */
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px 3px grey; 
+  /*   flex-grow: 1; */
+  }
+  .card {
+    width: 250px;
+    height: 500px;
+    box-sizing: border-box;
+    background-color: lightgrey;
+  /*   width: 180px; */
+    vertical-align: middle;
+    padding: 150px 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px 3px grey; 
+  }
+
+  
+  .card-holder {
+    display:flex;
+    justify-content: space-between;  
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*   height: 600px; */
+  /*   align-content: space-around; */
+  }
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    background-color: grey;
+    color: black;
+    text-transform: uppercase;
+    font-size: 100px;
+    font-weight: bolder;
+    padding: 25px 80px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 6px black;
+}
+.btn:hover {
+    box-shadow: 0 4px black;
+    top: 2px;
+}
+.btn:active {
+    box-shadow: none;
+    top: 6px;
+}
